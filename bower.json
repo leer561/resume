@@ -1,0 +1,37 @@
+{
+    "name": "bower",
+    "version": "0.0.0",
+    "authors": [
+        "leer <leer561@gmail.com>"
+    ],
+    "description": "library",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.5.0",
+        "angular-animate": "~1.5.0",
+        "angular-route": "~1.5.0",
+        "bootstrap": "v4.0.0-alpha.2",
+        "lodash": "~4.5.0",
+        "angular-mocks": "~1.5.0",
+        "jasmine-jquery": "~2.1.1",
+        "jquery": "~2.2.0"
+    },
+    "overrides": {
+        "bootstrap": {
+            "ignore": true
+        },
+        "angular-mocks": {
+            "ignore": true
+        },
+        "jasmine-jquery": {
+            "ignore": true
+        }
+    }
+}

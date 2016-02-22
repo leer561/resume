@@ -1,0 +1,24 @@
+# sys junks
+.DS_Store
+Thumbs.db
+
+# node modules
+node_modules/
+*.log
+
+# app source
+app/
+!src/app/
+
+# test reports
+reports/
+
+# bower files
+bower_components/
+
+#sublime text config files
+*.sublime-project
+*.sublime-workspace
+
+.idea/
+
