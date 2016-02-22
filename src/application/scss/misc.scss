@@ -1,0 +1,33 @@
+// Set container
+.container-bg {
+  background-color: $gray-lightest;
+}
+
+.main-container {
+  padding-bottom: 3rem;
+  > div {
+    padding: 1rem 1rem 0;
+  }
+}
+
+// Set font
+.gray {
+  color: $gray;
+}
+
+.gray-light {
+  color: $gray-light;
+}
+
+.list-title {
+  font-size: $font-size-lg;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Set img
+.img-rounded {
+  @include border-radius(2px);
+}

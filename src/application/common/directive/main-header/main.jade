@@ -1,0 +1,7 @@
+header#main-header
+   nav.navbar.main-container
+      a.navbar-brand(href="#/") RESUME
+      ul.nav.navbar-nav
+         li.nav-item(ng-repeat="nav in navs")
+            a.nav-link(ng-href='#'+'{{::nav.url}}', ng-class="isActive(nav.url)") {{::nav.name}}
+

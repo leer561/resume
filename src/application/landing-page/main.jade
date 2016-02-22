@@ -1,0 +1,36 @@
+#profile
+    h1.list-title 简介
+    ul.summary.list-group
+        li.list-group-item
+            |求职意向：
+            span.label.label-info 前端开发
+            span.label.label-default UI设计
+        li.list-group-item
+            |期望地区：
+            span.label.label-info 济南
+            span.label.label-default 北京
+        li.list-group-item
+            |工作技能：
+            ul#skill
+                li.gray-light(ng-repeat="skill in profileData.skills") {{::skill.name}}
+                    span.label(
+                    ng-repeat="item in skill.groups",
+                    ng-class='{"label-info":$first, "label-default":!$first}'
+                    ) {{::item}}
+
+    // work experience
+    section#work-experience
+        h2.list-title 项目经验
+        .card(ng-repeat="work in profileData.works")
+            .card-block
+                h5.card-title 项目：{{::work.title}}
+                p.card-text(ng-repeat="item in work.content") {{::item}}
+                p.card-text.text-muted.text-right {{::work.time}}
+
+
+
+
+
+
+
+

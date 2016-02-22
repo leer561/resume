@@ -1,0 +1,39 @@
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+    .main-container {
+      margin: 0 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+    .main-container {
+      margin: 0 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+    .main-container {
+      margin: 0 3rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 28px;
+    .main-container {
+      margin: 0 5rem;
+    }
+  }
+}

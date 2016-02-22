@@ -1,0 +1,22 @@
+doctype html
+html(ng-app="resume")
+    head
+        meta(charset='utf-8')
+        meta(name="description", content="{{metatags.description}}", ng-if="metatags.description")
+        meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+        title(ng-bind="metatags.title")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="author", content="leer")
+        meta(name="apple-mobile-web-app-title", content="leer's resume")
+        meta(name="application-name", content="leer's resume")
+        link(rel="stylesheet" href="/static/css/app.css")
+    body
+
+        main-header
+        .main-container(ng-view, autoscroll="true", ng-animate-children="true")
+
+
+        // Javascript
+        script(src="/static/vendor/vendor.js")
+        script(src="/static/js/app.js")
+        script(src="/static/js/templates-app.js")

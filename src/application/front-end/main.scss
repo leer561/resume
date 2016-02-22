@@ -1,0 +1,14 @@
+#front-end {
+  #javascript {
+    > li {
+      border: none;
+      color: $gray-light;
+      &:first-child {
+        color: $gray;
+      }
+    }
+  }
+  .label{
+    margin-right: .5rem;
+  }
+}

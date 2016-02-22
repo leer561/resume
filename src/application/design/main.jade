@@ -1,0 +1,9 @@
+#design
+   h1.list-title UI设计
+   .card(ng-repeat="work in designData")
+      .card-block
+         h5.card-title 项目：{{::work.title}}
+         p.card-text.text-muted 时间：{{::work.time}}
+         p.card-text {{::work.content}}
+      .card-block
+         img.img-reponsive.img-rounded(ng-repeat="img in work.images", ng-src="/static/img/{{::img}}")
