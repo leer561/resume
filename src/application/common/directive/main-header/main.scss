@@ -14,11 +14,22 @@
     .nav {
       > li {
         > a {
+          white-space: nowrap;
           color: $gray;
           &.active {
             color: $brand-primary;
           }
         }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #main-header {
+    .nav > li {
+      &:first-child {
+        margin-left: 1rem;
       }
     }
   }
